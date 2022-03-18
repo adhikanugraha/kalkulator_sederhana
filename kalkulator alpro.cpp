@@ -10,11 +10,19 @@ using namespace std;
 
 int main(){
 	int a,b,;
-	string operator;
+	string operasi;
 	int hasil;
 	
 //tampilan kalkulator  
 //minta user masukkan variable a,b dan operator menggunakan cin
+	cout <<"====Kalkulator===="<<endl;
+	cout <<"Masukkan Bilangan Pertama = ";
+	cin >>a;
+	cout <<"Masukan Operasi aritmatika = ";
+	cin >> operasi;
+	cout <<"Masukkan Bilangan Kedua = ";
+	cin >>b;
+	
 
 
 //logic memanggil fungsi
