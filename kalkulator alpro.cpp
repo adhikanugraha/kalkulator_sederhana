@@ -1,12 +1,28 @@
 #include<iostream>
 using namespace std;
 //fungsi penjumlahan dengan 2 parameter
+int tambah(int a, int b){
+	int hasil;
+	return hasil = a+b;
+}
 
 //fungsi pengurangan dengan 2 parameter
+int kurang(int a, int b){
+	int hasil;
+	return hasil = a-b;
+} 
 
 //fungsi perkalian dengan 2 parameter
+int kali(int a,int b){
+	int hasil;
+	return hasil = a*b;
+}
 
 //fungsi pembagian dengan 2 parameter
+int bagi(int a,int b){
+	int hasil;
+	return hasil = a/b;
+}
 
 int main(){
 	int a,b,;
