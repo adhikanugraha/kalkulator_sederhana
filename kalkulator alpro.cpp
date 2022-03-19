@@ -25,27 +25,51 @@ int bagi(int a,int b){
 }
 
 int main(){
-	int a,b,;
+	int a,b;
 	string operasi;
 	int hasil;
+	int ulang;
 	
 //tampilan kalkulator  
 //minta user masukkan variable a,b dan operator menggunakan cin
+ulang:
 	cout <<"====Kalkulator===="<<endl;
 	cout <<"Masukkan Bilangan Pertama = ";
 	cin >>a;
-	cout <<"Masukan Operasi aritmatika = ";
+	cout <<"Masukan Operasi aritmatika (+,-,*,/) = ";
 	cin >> operasi;
 	cout <<"Masukkan Bilangan Kedua = ";
 	cin >>b;
 	
-
+	
 
 //logic memanggil fungsi
 //gunakan penkondisian untuk memanggil fungsi berdasarkan variable operator
- 
+ 	if( operasi =="+"){
+ 		hasil=tambah(a,b);
+	}
+	else if(operasi =="-"){
+		hasil=kurang(a,b);
+	}
+	else if(operasi =="*"){
+		hasil=kali(a,b);
+	}
+	else if(operasi =="/"){
+		hasil=bagi(a,b);
+	}
+	
+	//menampilkan hasil
+	cout<<"Hasil dari "<< a <<" "<< operasi <<" "<<b<<" = "<<hasil<<endl;
+	cout<<"Tekan 1 kemudian enter jika ingin memakai kalkulator lagi "<<endl;
+	
+	cin>>ulang;
+	if(ulang==1){
+		goto ulang;
+	}
 
-
+	
+	
+	
 }
 
 
